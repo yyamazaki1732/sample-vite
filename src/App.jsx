@@ -1,13 +1,13 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import Box from './Box'
-import Button from './Button'
-import './App.css'
-import { Article } from './components/Article'
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
+import Box from "./Box";
+import Button from "./unit05/Button";
+import "./App.css";
+import { Article } from "./components/unit06/Article";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <div className="App">
@@ -31,14 +31,11 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
-      <Article 
-          title={'export & import を練習した日'}
-          content={'2023/04/17'}
-      />
+      <Article title={"export & import を練習した日"} content={"2023/04/17"} />
       <Box />
       <Button />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
