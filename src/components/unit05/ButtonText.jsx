@@ -1,5 +1,4 @@
 import classes from "./ButtonText.module.scss";
-// import "./ButtonText.css";
 
 // jsでクラスを定義
 // そのスコープが対象コンポーネントの外に出る事はない
@@ -15,7 +14,7 @@ const buttonStyle = {
 
 const ButtonText = (props) => {
   return (
-    <div style={buttonStyle} className="ButtonWrapper">
+    <div style={buttonStyle}>
       <h1 className={classes.ButtonTitle}>{props.title}</h1>
       <h2 className={classes.ButtonContent}>{props.content}</h2>
     </div>

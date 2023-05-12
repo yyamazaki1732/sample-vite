@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Title, Content, PublishButton } from "./index";
-import "./Article.css";
+import classes from "./Article.module.scss";
 
 export const Article = (props) => {
   const [isPublished, setIsPublished] = useState(false);
@@ -13,7 +13,7 @@ export const Article = (props) => {
 
   return (
     <article>
-      <div className="title-wrapper">
+      <div className={classes.title_wrapper}>
         <Title title={props.title} />
         <Content content={props.content} />
       </div>
