@@ -1,3 +1,5 @@
+import "./Content.css";
+
 export default function Content(props) {
-    return <p>{props.content}</p>
+  return <p className="text">{props.content}</p>;
 }
