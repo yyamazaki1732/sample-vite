@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const TextInput = () => {
+export const TextInput = () => {
   const [name, setName] = useState("");
 
   const handleName = (e) => {
@@ -9,5 +9,3 @@ const TextInput = () => {
 
   return <input onChange={(e) => handleName(e)} type={"text"} value={name} />;
 };
-
-export default TextInput;

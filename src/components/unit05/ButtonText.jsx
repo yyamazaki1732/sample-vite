@@ -12,7 +12,7 @@ const buttonStyle = {
   columnGap: "12px",
 };
 
-const ButtonText = (props) => {
+export const ButtonText = (props) => {
   return (
     <div style={buttonStyle}>
       <h1 className={classes.ButtonTitle}>{props.title}</h1>
@@ -21,4 +21,4 @@ const ButtonText = (props) => {
   );
 };
 
-export default ButtonText;
+// export default ButtonText;

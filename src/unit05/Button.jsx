@@ -1,7 +1,7 @@
-import ButtonText from "../components/unit05/ButtonText";
+import { ButtonText } from "../components/unit05/ButtonText";
 import classes from "./Button.module.scss";
 
-export default function Button() {
+export const Button = () => {
   return (
     <div className={classes.wrapper}>
       <ButtonText title={"会社名"} content={"アナイスカンパニー"} />
@@ -9,4 +9,4 @@ export default function Button() {
       <ButtonText title={"徒歩"} content={"約10分"} />
     </div>
   );
-}
+};
