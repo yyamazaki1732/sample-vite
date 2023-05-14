@@ -11,6 +11,9 @@ export const ToggleButton08 = () => {
     if (value) {
       console.log("Subscribe");
     }
+    // ===============================================
+    // # 再レンダリングされる前に呼び出される
+    // ===============================================
     return () => {
       console.log("Unsubscribs");
     };

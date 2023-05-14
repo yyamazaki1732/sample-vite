@@ -7,12 +7,15 @@ import { Counter } from "./components/unit07/Counter";
 import { ToggleButton } from "./components/unit07/Toggle";
 import { Counter08 } from "./components/unit08/Counter08";
 import { ToggleButton08 } from "./components/unit08/Toggle08";
+import { Fetch } from "./components/unit09/Fetch";
 import classes from "./App.module.scss";
 
 function App() {
   return (
     <div className={classes.App}>
       <h1>Vite + React</h1>
+      <h2 className={classes.heading}>unit09</h2>
+      <Fetch />
       <h2 className={classes.heading}>unit08</h2>
       <h3 className={classes.subheading}>Counter</h3>
       <ToggleButton08 />
